@@ -39,7 +39,9 @@ function create() {
   // this.homer = this.physics.add.image(50, 200, "homer");
   this.player = this.add.sprite(100, 290, "sprite");
   this.player.setScale(2);
-  this.life = this.add.image(50, 50, "live");
+  this.life1 = this.add.image(50, 50, "live");
+  this.life2 = this.add.image(100, 50, "live");
+  this.life3 = this.add.image(150, 50, "live");
   // this.anims.create({
   //   key: "quiet",
   //   frames: this.anims.generateFrameNumbers("sprite", {

@@ -4,14 +4,17 @@ class Scene1 extends Phaser.Scene {
   constructor() {
     super({ key: "Scene1" }); //Cuando se cargue el constructor, se cargue el del padre
   }
-  preload() {}
+  preload() {
+    this.load.audio("intro", "./assets/Simpsons.mp3");
+  }
   create() {
     this.add.text(20, 20, "Loading game...");
-    this.load.audio("intro", "./assets/Simpsons.mp3");
+    //Music
+    this.music = this.sound.add("intro", { loop: true });
+    this.music.play();
   }
   update(time, delta) {}
 }
-
 
 // var demo = {};
 // var objects = {};
@@ -25,4 +28,3 @@ class Scene1 extends Phaser.Scene {
 // };
 
 //Preload function: primarely used for images
-
