@@ -12,7 +12,6 @@ class Scene1 extends Phaser.Scene {
   update(time, delta) {}
 }
 
-// export default Scene1;
 
 // var demo = {};
 // var objects = {};
@@ -27,4 +26,3 @@ class Scene1 extends Phaser.Scene {
 
 //Preload function: primarely used for images
 
-// module.exports = Scene1;
